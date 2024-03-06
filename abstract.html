@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <title>Home | Web Kolaborasi IL Kelompok 6</title>
+    <style>
+        body {
+            background-color: #B52E1F;
+            margin: 0;
+            padding: 0;
+            font-family: "Lexend", sans-serif;
+        }
+        .header {
+            width: 100%;
+            height: 200px;
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FBDC7C;
+            color: #fff;
+            font-family: "Lexend", sans-serif;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav li {
+            margin: 5px;
+        }
+        .nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px;
+            transition: color 0.3s, background-color 0.3s;
+            font-size: 16px;
+            text-align: center;
+            flex: 1;
+        }
+        .nav a:hover {
+            background-color: #EC9856;
+            color: white;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background-color: #EC9856;
+            font-family: "Lexend", sans-serif;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+        }
+        .card h3, .card p {
+            margin: 20px;
+        }
+        .card p {
+            text-align: left;
+            text-align: justify;
+            font-family: "Lexend", sans-serif;
+            font-size: 18px;
+            margin: 20px; 
+        }
+        .footer {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #FBDC7C;
+            color: #000;
+            text-align: center;
+            font-family: "Lexend", sans-serif;
+        }
+
+        /* Center the iframe */
+        .spotify-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .spotify-container iframe {
+            width: 90%; /* Adjust the width as needed */
+            border-radius: 12px;
+        }
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav li {
+        margin: 5px 0;
+    }
+
+    .nav a {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card {
+        flex: 1;
+        margin: 0;
+    }
+
+    .header {
+        height: 150px; /* Adjust height for mobile view */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .left-column {
+        flex: 7;
+        margin-right: 20px;
+    }
+
+    .right-column {
+        flex: 3;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="home.html#">HOME</a></li>
+            <li><a href="abstract.html#">ABSTRACT</a></li>
+            <li><a href="bab1.html#">PENDAHULUAN</a></li>
+            <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
+            <li><a href="bab3.html#">HASIL KEGIATAN</a></li>
+            <li><a href="bab4.html#">PENUTUP</a></li>
+            <li><a href="ppt.html#">POWERPOINT</a></li>
+            <li><a href="video.html#">VIDEO</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="card">
+                <h1 style="text-align: center;">ABSTRACT</h1>
+                <div style="text-align: center;">
+                    <p>The bazaar established on the 5th of December, was based on the concept of racing. Race To Rave is a small business retailed for the project of Saint Ursula Junior High School, which sells various things including food, products, and drinks. Mozzarella cheese is one of the most loved cheeses in this generation. This type of cheese is used in one of our foods, cheese cubes. Considering the range price always above Rp 30.000,-, we decided to make mozzarella cheese as our main project in Science, focusing on Biology. Unlike supermarket-bought mozzarella, freshly made ones are usually cheaper in material, yet complicated in the process. Leveraging the field of socials, the whole team has made a report for our financial stability after the bazaar. Besides that, the social and math field also required the report and statistics of our products. The research methods we used in this biotechnology process are laboratory experiments; which include observations and measurements of the ingredients, statistical analysis; including the statistics we made for our final report, market research, and trend analysis; which involves the consideration of trends in mozzarella cheese to attract customers.</p>
+            <p>Bazaar yang didirikan pada tanggal 5 Desember ini mengusung konsep racing. Race To Rave adalah usaha kecil yang dibuat untuk proyek Sekolah SMP Santa Ursula Jakarta, yang menjual berbagai macam barang termasuk makanan, produk dan minuman. Keju mozarella merupakan salah satu keju yang paling digandrungi pada generasi ini. Keju jenis ini digunakan pada salah satu makanan kita, yaitu cheese cubes. Mengingat kisaran harga yang selalu diatas Rp 30.000,-, kami memutuskan untuk menjadikan keju mozzarella sebagai proyek utama kami di bidang Sains dengan fokus pada sektor Biologi. Berbeda dengan mozarella yang dibeli di supermarket, mozzarella segar biasanya lebih murah bahannya, namun prosesnya rumit. Memanfaatkan bidang sosial, seluruh tim sudah membuat laporan untuk stabilitas keuangan kami setelah bazar. Selain itu, bidang sosial dan matematika juga membutuhkan laporan dan statistik produk kami. Metode penelitian yang kami gunakan pada proses bioteknologi ini adalah eksperimen laboratorium; yang meliputi observasi dan pengukuran bahan, analisis statistik; termasuk statistik yang kami buat untuk laporan akhir, riset pasar, dan analisis tren; melibatkan pertimbangan tren keju mozzarella untuk menarik pelanggan.</p></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="card">
+                <h3>Spotify Playlist!</h3>
+                <div class="spotify-container">
+                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <p>Enjoy our playlist while browsing through our content!</p>
+            </div>
+            <div class="card">
+                <h3>Gallery :</h3>
+                <div>
+                    <!-- Add your gallery content here -->
+                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
+                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
+                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+    </div>
+</body>
+</html>

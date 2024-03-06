@@ -4,6 +4,7 @@
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
     <title>Home | Web Kolaborasi IL Kelompok 6</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             background-color: #B52E1F;
@@ -73,23 +74,32 @@
         .card img {
             width: 100%;
         }
-        .card h3, .card p {
+        .card h3 {
+		text-align: center;
             margin: 20px;
         }
         .card p {
             text-align: left;
             text-align: justify;
             font-family: "Lexend", sans-serif;
-            font-size: 18px;
+            font-size: 17px;
             margin: 20px; 
-		.card div {
-    text-align: left;
+        }
+		.card .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.card h2 {
-    text-align: left;
+.card .gallery-container img {
+    margin: 5px; /* Adjust the margin as needed */
 }
-        }
+.left-column .card {
+    padding: 5px; /* Add padding only to the cards inside the container */
+}
+.right-column .card {
+    padding: 2px; /* Add padding only to the cards inside the container */
+}
         .footer {
             width: 100%;
             height: 50px;
@@ -112,6 +122,10 @@
         }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
     .nav {
         flex-direction: column;
         align-items: stretch;
@@ -131,10 +145,10 @@
         font-size: 14px;
         text-align: center;
     }
-
-    .card {
+    .left-column, .right-column {
         flex: 1;
-        margin: 0;
+        margin: 10;
+        width: 100%; /* Set the width to 100% for mobile devices */
     }
 
     .header {
@@ -143,7 +157,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .container {
+ .container {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -163,7 +177,7 @@
     <div class="header"></div>
     <div class="nav">
         <ul>
-            <li><a href="home.html#">HOME</a></li>
+            <li><a href="main.html#">HOME</a></li>
             <li><a href="abstract.html#">ABSTRACT</a></li>
             <li><a href="bab1.html#">PENDAHULUAN</a></li>
             <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
@@ -177,63 +191,46 @@
         <div class="left-column">
             <div class="card">
                 <h1 style="text-align: center;">PENDAHULUAN</h1>
-                <div style="text-align: center;">
-        			<h2><strong>1.1 Latar Belakang</strong></h2>
-<p>Sekolah SMP Santa Ursula Jakarta tidak hanya menuntut peserta didiknya mampu&nbsp; dalam bidang akademik saja, tetapi peserta didik diharapkan dapat tumbuh menjadi pribadi yang berintegritas dan mau terlibat. Oleh karena itu, setiap tahun SMP Santa Ursula Jakarta mengadakan kegiatan kewirausahaan. Tahun ini kami para siswi kelas IX mengadakan pembelajaran kewirausahaan, dengan mengadakan bazar. Kegiatan bazar adalah salah satu program dari Integrated Learning yang merupakan kolaborasi 10 mata pelajaran untuk mendapat nilai ujian praktek siswi kelas IX. Bazar ini juga sebagai tempat untuk menggali kreativitas para siswi di luar kemampuan akademik. Melalui bazar para siswi dapat mengembangkan rasa tanggung jawab, kerjasama diantara siswi satu kelompok, siswi satu sekolah, guru-guru dan orang tua murid.</p>
-<p>Dengan adanya bazar, para siswa dapat mengembangkan keterampilan berorganisasi melalui interaksi antar anggota kelompok, terlibat dalam perencanaan dan pelaksanaan&nbsp; dasar,&nbsp; para siswi&nbsp; dapat mengasah keterampilan berorganisasi dan manajemen waktu. Berinteraksi langsung dengan pengunjung bazaar berguna untuk meningkatkan keterampilan berkomunikasi dan berinteraksi sosial. Para siswi terlibat dalam&nbsp; bazar, memberi kesempatan&nbsp; anggota kelompok mengambil tanggung jawab dan merasakan dampak positif dari kontribusi mereka terhadap sekolah. Memikirkan konsep stand, produk yang akan dijual dan strategi penjualan&nbsp; memerlukan kreativitas. Meningkatkan semangat gotong royong atau bekerja sama dalam satu kelompok harus dibangun supaya tujuan tercapai. Bazar juga dapat memberikan pengalaman langsung pada siswa untuk memahami dan menerapkan konsep kewirausahaan. Secara umum manfaat bazar sangat besar bagi peserta didik untuk melakukan kegiatan yang positif.</p>
-<p>Bazaar yang diselenggarakan menjual hasil produk bioteknologi yang dibuat para siswi kelas IX yang merupakan tugas dari pelajaran fisika dan biologi. Bioteknologi adalah ilmu dan teknologi terapan yang memanfaatkan makhluk hidup untuk memproduksi barang atau jasa yang dapat dimanfaatkan oleh manusia. Produk bioteknologi yang dibuat adalah bioteknologi konvensional, yaitu bioteknologi yang menggunakan peralatan serta bahan sederhana dalam prosesnya. Bioteknologi konvensional memanfaatkan mikroorganisme untuk menghasilkan suatu produk baru yang berguna bagi manusia.</p>
-<p>Selain bioteknologi, bazar juga menjual hasil olahan pangan dari bahan dasar peternakan dan perikanan, tugas dari pelajaran prakarya. Bahan dasar peternakan dari daging sapi, daging ayam, daging bebek dan lain-lain. Sedangkan bahan dasar perikanan diperoleh dari Ikan, udang, cumi-cumi, rumput laut dan lain-lain. Makanan dari bahan dasar perikanan dan peternakan boleh dari hasil bioteknologi yang sudah dibuat para siswi.</p>
-<p>Kelas 93, kelas kami mendapat giliran bazaar pada hari Selasa, 5 December 2023 di aula SMP Santa Ursula, dari pukul 07.00 WIB sampai pukul 12.00 WIB. Terdapat 7 jumlah stand bazar di kelas 93. Tema bazar kelas kami adalah <em>downtown.</em> Perwakilan dari kelompok bekerja sama membuat hiasan antara lain membuat ruangan untuk telefon, ada juga yang membawa beberapa sepeda untuk dekorasi. Bunga-bunga dan lampu menghiasi bazar kelas kami, sungguh meriah.&nbsp; Kami kelompok 6, dengan stand yang bernama Race to Rave terdiri dari 4 anggota, yaitu Letha absen 6, Athia absen 8, Cheryl absen 11, dan Christabelle absen 12. Kelompok kami menjual berbagai jenis makanan, minuman, serta produk-produk seperti aksesoris dan peralatan tulis. Pembeli dari bazaar kelas kami adalah siswa/siswi SD, siswi SMP, siswi SMA, guru-guru, dan juga orang tua murid dari kelas 93 yang berkunjung. Barang-barang yang kami jual tidak ada yang tersisa pada hari itu.</p>
-<p>&nbsp;</p>
-<p>Maksud dan tujuan diadakan bazaar ini adalah dengan sebagai berikut:</p>
-<ol>
-<li>Memperkenalkan kepada warga sekolah, orang tua murid dan pengunjung bazar mengenai hasil produk bioteknologi dan olah pangan dari bahan dasar perikanan dan peternakan yang dibuat siswi.</li>
-<li>Memberi kesempatan kepada para siswa untuk belajar menjadi pelaku dan penggerak roda perekonomian dalam lingkup kecil.</li>
-<li>Mengasah jiwa wirausaha sejak dini.</li>
-<li>Mengajarkan sikap jujur, kreatif, kerjasama, tanggung jawab, dan pantang menyerah.</li>
-<li>Melatih para siswi supaya tidak malu dalam mempromosikan dagangannya.</li>
-</ol>
-<p>&nbsp;</p>
-<h2><strong>1.2 Tujuan Penelitian</strong></h2>
-<p>Tujuan dari penelitian dan bazar ini adalah dengan sebagai berikut:</p>
-<ol>
-<li>Untuk mengetahui usaha manusia untuk memperoleh variasi makanan.</li>
-<li>Untuk mengetahui cara mengolah susu menjadi bioteknologi.</li>
-<li>Untuk mengetahui mengapa bioteknologi penting.</li>
-<li>Meningkatkan kreativitas siswi dalam pengolahan bahan makanan dari hasil perikanan dan peternakan.</li>
-<li>Untuk meningkatkan keterampilan berorganisasi dan semangat bergotong royong.</li>
-<li>Untuk menambah pengetahuan tentang wirausaha.</li>
-</ol>
-<p>&nbsp;</p>
-<h2><strong>1.3 Manfaat Bazaar</strong></h2>
-<ol>
-<li>Bagi siswi</li>
-</ol>
-<p>Meningkatkan semangat kerja sama dalam satu kelompok, meningkatkan keterampilan berkomunikasi dan berinteraksi sosial, memperkenalkan pendidikan wirausaha.</p>
-<ol>
-<li>Bagi guru</li>
-</ol>
-<p>Memberi pembelajaran praktis kepada siswi dalam perencanaan pembuatan barang, cara menjual, perhitungan matematika, kemampuan berkomunikasi, mempromosikan barang,</p>
-<ol>
-<li>Bagi peneliti</li>
-</ol>
-<p>Mempererat hubungan antara guru, siswi, karyawan sekolah, dan orang tua murid. Mengamati interaksi dan perilaku antar peserta bazaar, mengamati kepuasan pembeli terhadap produk yang dijual.</p>
-<p>&nbsp;</p>
-<h2><strong>1.4 Manfaat Bioteknologi</strong></h2>
-<ol>
-<li>Bagi siswi:</li>
-</ol>
-<p>Meningkatkan pemahaman konsep ilmiah, meningkatkan kreativitas, keterampilan, dan kolaborasi memahami tentang proses pembuatan keju mozarella, dan menambah pengetahuan di bidang wirausaha.</p>
-<ol>
-<li>Bagi guru:</li>
-</ol>
-<p>Memperkaya pengalaman belajar siswi dengan peningkatan pemahaman konsep ilmiah dalam pembuatan keju dan mengembangkan keterampilan di bidang memasak.</p>
-<ol>
-<li>Bagi peneliti:</li>
-</ol>
-<p>Menambah pengetahuan dan pengalaman membuat bioteknologi secara sederhana, dan untuk memenuhi tugas Integrated Learning ujian pra</p>
-			
-		</div>
+				<div style="text-align: center;">
+					<h2 style="font-weight:bold; text-align: left;"">1.1 Latar Belakang</h2>
+					<p>Sekolah SMP Santa Ursula Jakarta tidak hanya menuntut peserta didiknya mampu  dalam bidang akademik saja, tetapi peserta didik diharapkan dapat tumbuh menjadi pribadi yang berintegritas dan mau terlibat. Oleh karena itu, setiap tahun SMP Santa Ursula Jakarta mengadakan kegiatan kewirausahaan. Tahun ini kami para siswi kelas IX mengadakan pembelajaran kewirausahaan, dengan mengadakan bazar. Kegiatan bazar adalah salah satu program dari Integrated Learning yang merupakan kolaborasi 10 mata pelajaran untuk mendapat nilai ujian praktek siswi kelas IX. Bazar ini juga sebagai tempat untuk menggali kreativitas para siswi di luar kemampuan akademik. Melalui bazar para siswi dapat mengembangkan rasa tanggung jawab, kerjasama diantara siswi satu kelompok, siswi satu sekolah, guru-guru dan orang tua murid.</p>
+					<p>Dengan adanya bazar, para siswa dapat mengembangkan keterampilan berorganisasi melalui interaksi antar anggota kelompok, terlibat dalam perencanaan dan pelaksanaan  dasar,  para siswi  dapat mengasah keterampilan berorganisasi dan manajemen waktu. Berinteraksi langsung dengan pengunjung bazaar berguna untuk meningkatkan keterampilan berkomunikasi dan berinteraksi sosial. Para siswi terlibat dalam  bazar, memberi kesempatan  anggota kelompok mengambil tanggung jawab dan merasakan dampak positif dari kontribusi mereka terhadap sekolah. Memikirkan konsep stand, produk yang akan dijual dan strategi penjualan  memerlukan kreativitas. Meningkatkan semangat gotong royong atau bekerja sama dalam satu kelompok harus dibangun supaya tujuan tercapai. Bazar juga dapat memberikan pengalaman langsung pada siswa untuk memahami dan menerapkan konsep kewirausahaan. Secara umum manfaat bazar sangat besar bagi peserta didik untuk melakukan kegiatan yang positif.</p>
+					<p>Bazaar yang diselenggarakan menjual hasil produk bioteknologi yang dibuat para siswi kelas IX yang merupakan tugas dari pelajaran fisika dan biologi. Bioteknologi adalah ilmu dan teknologi terapan yang memanfaatkan makhluk hidup untuk memproduksi barang atau jasa yang dapat dimanfaatkan oleh manusia. Produk bioteknologi yang dibuat adalah bioteknologi konvensional, yaitu bioteknologi yang menggunakan peralatan serta bahan sederhana dalam prosesnya. Bioteknologi konvensional memanfaatkan mikroorganisme untuk menghasilkan suatu produk baru yang berguna bagi manusia.</p>
+					<p>Selain bioteknologi, bazar juga menjual hasil olahan pangan dari bahan dasar peternakan dan perikanan, tugas dari pelajaran prakarya. Bahan dasar peternakan dari daging sapi, daging ayam, daging bebek dan lain-lain. Sedangkan bahan dasar perikanan diperoleh dari Ikan, udang, cumi-cumi, rumput laut dan lain-lain. Makanan dari bahan dasar perikanan dan peternakan boleh dari hasil bioteknologi yang sudah dibuat para siswi.</p>
+					<p>Kelas 93, kelas kami mendapat giliran bazaar pada hari Selasa, 5 December 2023 di aula SMP Santa Ursula, dari pukul 07.00 WIB sampai pukul 12.00 WIB. Terdapat 7 jumlah stand bazar di kelas 93. Tema bazar kelas kami adalah downtown. Perwakilan dari kelompok bekerja sama membuat hiasan antara lain membuat ruangan untuk telefon, ada juga yang membawa beberapa sepeda untuk dekorasi. Bunga-bunga dan lampu menghiasi bazar kelas kami, sungguh meriah.  Kami kelompok 6, dengan stand yang bernama Race to Rave terdiri dari 4 anggota, yaitu Letha absen 6, Athia absen 8, Cheryl absen 11, dan Christabelle absen 12. Kelompok kami menjual berbagai jenis makanan, minuman, serta produk-produk seperti aksesoris dan peralatan tulis. Pembeli dari bazaar kelas kami adalah siswa/siswi SD, siswi SMP, siswi SMA, guru-guru, dan juga orang tua murid dari kelas 93 yang berkunjung. Barang-barang yang kami jual tidak ada yang tersisa pada hari itu.</p>
+				</div>
+				<!-- Added ordered list with formatted text below -->
+                    <p>Maksud dan tujuan diadakan bazaar ini adalah dengan sebagai berikut:<p>
+                    <ol style="text-align: left;">
+                        <li>Memperkenalkan kepada warga sekolah, orang tua murid dan pengunjung bazar mengenai hasil produk bioteknologi dan olah pangan dari bahan dasar perikanan dan peternakan yang dibuat siswi.</li>
+                        <li>Memberi kesempatan kepada para siswa untuk belajar menjadi pelaku dan penggerak roda perekonomian dalam lingkup kecil.</li>
+                        <li>Mengasah jiwa wirausaha sejak dini.</li>
+                        <li>Mengajarkan sikap jujur, kreatif, kerjasama, tanggung jawab, dan pantang menyerah.</li>
+                        <li>Melatih para siswi supaya tidak malu dalam mempromosikan dagangannya.</li>
+                    </ol>
+                    <!-- End of ordered list -->
+				<h2 style="font-weight:bold; text-align: left;"">1.2 Tujuan Penelitian</h2>
+					<p>Tujuan dari penelitian dan bazar ini adalah dengan sebagai berikut:</p>
+					<ol style="text-align: left;">
+						<li>Untuk mengetahui usaha manusia untuk memperoleh variasi makanan.</li>
+						<li>Untuk mengetahui cara mengolah susu menjadi bioteknologi.</li>
+						<li>Untuk mengetahui mengapa bioteknologi penting.</li>
+						<li>Meningkatkan kreativitas siswi dalam pengolahan bahan makanan dari hasil perikanan dan peternakan.</li>
+						<li>Untuk meningkatkan keterampilan berorganisasi dan semangat bergotong royong.</li>
+						<li>Untuk menambah pengetahuan tentang wirausaha.</li>
+					</ol>
+				<h2 style="font-weight:bold; text-align: left;"">1.3 Manfaat Bazaar</h2>
+				    <ol style="text-align: left;">
+                        <li><b>Bagi siswi</b><br>Meningkatkan semangat kerja sama dalam satu kelompok, meningkatkan keterampilan berkomunikasi dan berinteraksi sosial, memperkenalkan pendidikan wirausaha.</li>
+                        <li><b>Bagi guru</b><br>Memberi pembelajaran praktis kepada siswi dalam perencanaan pembuatan barang, cara menjual, perhitungan matematika, kemampuan berkomunikasi, mempromosikan barang.</li>
+                        <li><b>Bagi peneliti</b><br>Mempererat hubungan antara guru, siswi, karyawan sekolah, dan orang tua murid. Mengamati interaksi dan perilaku antar peserta bazaar, mengamati kepuasan pembeli terhadap produk yang dijual.</li>
+                    </ol>
+				<h2 style="font-weight:bold; text-align: left;"">1.4 Manfaat Bioteknologi</h2>
+				    <ol style="text-align: left;">
+                        <li><b>Bagi siswi</b><br>Meningkatkan pemahaman konsep ilmiah, meningkatkan kreativitas, keterampilan, dan kolaborasi memahami tentang proses pembuatan keju mozarella, dan menambah pengetahuan di bidang wirausaha.</li>
+                        <li><b>Bagi guru</b><br>Memperkaya pengalaman belajar siswi dengan peningkatan pemahaman konsep ilmiah dalam pembuatan keju dan mengembangkan keterampilan di bidang memasak.</li>
+                        <li><b>Bagi peneliti</b><br>Menambah pengetahuan dan pengalaman membuat bioteknologi secara sederhana, dan untuk memenuhi tugas Integrated Learning ujian praktik.</li>
+                    </ol>				
             </div>
         </div>
         <div class="right-column">
@@ -241,22 +238,24 @@
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
                     <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <p>Enjoy our playlist while browsing through our content!</p>
+                </div >
+                <p style="text-align: center;">Ngejam sama Race to Rave yuk!</p>
             </div>
             <div class="card">
                 <h3>Gallery :</h3>
-                <div>
-                    <!-- Add your gallery content here -->
-                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
-                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
-                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
-                </div>
+     <div class="gallery-container">
+        <!-- Add your gallery images here -->
+        <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 30%;">
+        <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 30%;">
+        <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 30%;">
+        <img src="gallery_image4.jpg" alt="Gallery Image 4" style="width: 30%;">
+        <img src="gallery_image5.jpg" alt="Gallery Image 5" style="width: 30%;">     
+    </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+        <marquee behaviour="scroll" scrollamount="15">Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
     </div>
 </body>
 </html>

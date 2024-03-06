@@ -3,7 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <title>Home | Web Kolaborasi IL Kelompok 6</title>
+    <title>Bab 2 | Web Kolaborasi IL Kelompok 6</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             background-color: #B52E1F;
@@ -73,15 +74,31 @@
         .card img {
             width: 100%;
         }
-        .card h3, .card p {
+        .card h3 {
+        text-align: center;
             margin: 20px;
         }
         .card p {
             text-align: left;
             text-align: justify;
             font-family: "Lexend", sans-serif;
-            font-size: 14px;
+            font-size: 17px;
             margin: 20px; 
+        }
+        .card .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card .gallery-container img {
+            margin: 5px; /* Adjust the margin as needed */
+        }
+        .left-column .card {
+            padding: 5px; /* Add padding only to the cards inside the container */
+        }
+        .right-column .card {
+            padding: 2px; /* Add padding only to the cards inside the container */
         }
         .footer {
             width: 100%;
@@ -105,6 +122,10 @@
         }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
     .nav {
         flex-direction: column;
         align-items: stretch;
@@ -124,10 +145,10 @@
         font-size: 14px;
         text-align: center;
     }
-
-    .card {
+    .left-column, .right-column {
         flex: 1;
-        margin: 0;
+        margin: 10;
+        width: 100%; /* Set the width to 100% for mobile devices */
     }
 
     .header {
@@ -136,7 +157,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .container {
+ .container {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -156,7 +177,7 @@
     <div class="header"></div>
     <div class="nav">
         <ul>
-            <li><a href="home.html#">HOME</a></li>
+            <li><a href="main.html#">HOME</a></li>
             <li><a href="abstract.html#">ABSTRACT</a></li>
             <li><a href="bab1.html#">PENDAHULUAN</a></li>
             <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
@@ -169,38 +190,61 @@
     <div class="container">
         <div class="left-column">
             <div class="card">
-                <h1 style="text-align: center;">Race to Rave Crew :</h1>
+                <h1 style="text-align: center;">RENCANA KEGIATAN</h1>
                 <div style="text-align: center;">
-                    <img src="perkenalan.jpg" style="width: 50%;" alt="Race to Rave Crew">
-                    <p><b>Riwayat Penulis (dari kiri ke kanan)</b></p>
-                    <p>&#10070; Arletha Rhea Tirta, biasa dipanggil Letha, merupakan anak pertama dari dua bersaudara. Letha lahir di Jakarta pada tanggal 8 April 2009. Letha pertama kali menempuh pendidikan di Kinderfield Preschool, Teruna Muda Elementary School, dan kini di SMP Santa Ursula Jakarta.</p>
-                    <p>&#10070; Cheryl Miracle Paris Zhang, atau biasanya dipanggil Cheryl merupakan anak pertama dari tiga bersaudara. Cheryl lahir pada tanggal 17 November 2009, dan menempuh pendidikan di Sekolah Bunda Mulia selama 9 tahun. Kini, Cheryl merupakan peserta didik kelas IX di Sekolah Santa Ursula Jakarta.</p>
-                    <p>&#10070; Benedicta Glorielle Athia Aritonang, biasanya dipanggil Athia merupakan anak pertama dan anak tunggal. Athia lahir pada tanggal 7 Desember 2008, dan menempuh pendidikan di KB-TK dan SD Santa Theresia selama 9 tahun. Kini Athia merupakan peserta didik SMP Kelas 9 di SMP Santa Ursula Jakarta.</p>
-                    <p>&#10070; Christabelle Natasha Arfan, atau biasanya dipanggil Christabelle merupakan anak kedua dari dua bersaudara. Christabelle lahir pada tanggal 2 Oktober 2009, dan menempuh pendidikan Nursery Kinderland selama 1 tahun, KB-TK Katolik Diakonia selama 3 tahun, SDK IPEKA Pluit selama 6 tahun. Kini Christabelle merupakan peserta didik kelas IX di SMP Santa Ursula Jakarta.</p>
-                </div>
+                    <h2 style="font-weight:bold; text-align: left;">2.1 Perencanaan Produk</h2>
+                    <p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Kelompok kami mendapat beberapa ide barang dan makanan yang akan dijual di bazaar seperti keychain, mozza stick, cookies, yogurt, dan hot chocolate. Ketika memulai diskusi, muncul ide lain yaitu perlombaan balap mobil. Ide pembuatan keychain, yogurt, dan cookies dibatalkan karena kesulitan dalam hal pembuatannya.<br><br>
+                    Bioteknologi yang kita pilih adalah keju mozarella, yang merupakan ide dari salah satu anggota. Keju mozarella menjadi pilihan karena waktu pembuatannya hanya singkat, memerlukan waktu sehari dan bahan yang digunakan mudah diperoleh, tidak terlalu banyak dan bisa dibeli secara online melalui platform tokopedia.<br><br>
+                    Bahan yang diperlukan untuk membuat keju mozarella adalah susu sapi segar, citric acid, bakteri retnet, garam. Sedangkan cara membuatnya adalah pasteurisasi susu segar sampai suhu mencapai 65˚C, menutup panci sampai suhu turun 35˚C, memberi bakteri retnet dan citric acid. Setelah terjadi penggumpalan ditunggu selama 20 menit, kemudian dipanaskan sebentar, disaring, dicampur dengan garam sampai rata, dan diaduk dengan air mendidih sampai elastis.<br><br>
+                    Karena hasil bioteknologi ini harus dijual, kami memutuskan untuk membuat melted cheesecubes. Bahan-bahan yang diperlukan untuk membuat melted cheesecubes adalah kentang yang dikukus kemudian dihaluskan dan diberi bumbu seperti lada, garam dan merica. Kentang ini digunakan untuk membungkus keju mozarella, kemudian dicelup ke dalam campuran telur dan terigu yang dicairkan dengan air sampai kekentalan sedang, kemudian ditutup dengan bubble crumb. Goreng sampai warnanya kuning keemasan. Bubble crumb ini enak dimakan selagi masih panas karena keju masih lumer.<br><br>
+                    Sedangkan untuk perikanan atau peternakan, kami memilih perikanan dengan menggunakan bahan dasar ikan salmon dan crab sticks. Kelompok kami membuat mentai bowl. Bahan-bahan yang diperlukan untuk membuat mentai bowl adalah nasi, crabstick, salmon, garam, gula, lada, rumput laut, dan saus mentai. Untuk saus mentai kami membeli yang siap saji.<br><br>
+                    Cara membuat mentai bowl adalah …..<br><br>
+                    Selain itu kelompok kami juga menjual minuman. Minuman yang kami pilih adalah coklat, mengingat coklat merupakan minuman yang disukai semua golongan baik anak-anak SD dan SMP. Minuman coklat kami terbuat dari bubuk coklat Javaland, air panas, susu kental manis dan gula pasir.<br><br>
+                    Cara membuatnya memasukan bubuk coklat ke dalam termos kemudian dicairkan dengan air panas, sambil diaduk masukan susu kental manis dan gula pasir secukupnya. Kami membuat sebanyak satu termos ukuran 3 liter.<br><br>
+                    Selain itu, kelompok kami juga menjual totebag, jepit rambut, jedai, scrunchie, cincin, gelang, kalung, rautan pensil, stiker, hotwheels, totebag, sticky note, dan kacamata hitam. Untuk pembeli yang beli barang seharga Rp 20.000 mendapat kesempatan menembak kaleng untuk mendapat hadiah. Hadiahnya antara lain pensil, stiker, dan pulpen. Kelompok kami menjual barang barang-barang yang bukan makanan lewat platform shopee. Lumayan banyak respon dari pembeli Shopee, sehingga kelompok kami harus menambah stok barang dagangan. Tiga penjualan tertinggi dari kelompok kami adalah stiker, scrunchy, dan sticky note, karena barang-barang tersebut merupakan barang yang banyak kami sediakan.</p>
+					<h2 style="font-weight:bold; text-align: left;">2.2 Perencanaan Promosi</h2>
+                    <p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Perencanaan promosi untuk bazaar Race to Rave tentu saja sudah dilakukan sejak awal pembentukan produk. Bahkan sebelum produk resmi diluncurkan, kami sudah memiliki strategi marketing yang bersarang di instagram resmi milik kami. Berbagai macam media kami gunakan untuk melakukan promosi dan marketing yang baik, tentu saja hal ini dilakukan demi menarik perhatian pembeli secara menyeluruh.<br><br>
+                    Dalam instagram resmi @race2rave.id, kami secara resmi mengunggah tiga foto yang merupakan awal dari perjalanan kami. Ketiga foto tersebut bertulis “Coming Vroom” atau secara garis besar merupakan plesetan dari kata  “coming soon” dalam bahasa Inggris. Sebagai simbol dari bermulanya promosi yang kami lakukan, kami mengunggah tiga buah foto tersebut pada tanggal 27 Oktober 2023. Pada 19 November 2023, @race2rave.id meluncurkan poster resmi milik kami. Media ini kami peruntukkan lebih dulu agar pihak eksternal maupun internal dapat mengakses secara luas produk-produk kami. Poster ini juga kami peruntukkan terkhususnya bagi pihak eksternal yang ingin membeli produk kami melalui Google-form ataupun Shopee.<br><br>
+                    Setelah selesai dengan design poster, kami beralih dengan gencar melakukan promosi di instagram-story pribadi kami ataupun instagram milik bersama. Umumnya dalam instagram pribadi kami, kami hanya mengunggah ulang apa yang sudah diunggah dalam instagram milik kami. Namun dalam instagram @race2rave.id, kami sering mengunggah kegiatan sehari-hari seperti berbelanja untuk produk, games, konten tiktok, dan lain-lain. Konten tiktok tersebut sudah kami lakukan dalam kegiatan Integrated Learning Penjaskes pada awal semester satu. Kami diperuntukkan membuat tiga macam konten, dan akhirnya terpilihlah satu yang kami unggah pada instagram Race To Rave di tanggal 3 Desember 2023. Guna video tersebut dibuat semenarik mungkin adalah agar komedi yang disampaikan bisa membuat pengikut di Instagram kami semakin gencar tertarik untuk datang.</p>
+					<h2 style="font-weight:bold; text-align: left;">2.3 Perencanaan Booth</h2>
+                    <p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Perencanaan Booth untuk bazaar Race to Rave dilakukan H-1 pelaksanaan bazaar. Sebelumnya, kami sudah merencanakan rancangan dekorasi serta hal-hal lain yang perlu diperhatikan saat bazaar agar booth kami dapat terlihat lebih menonjol dan unik. Tujuan kami melakukan perencanaan booth adalah agar konsep Race to Rave dapat menarik perhatian para pembeli dan audiens sehingga berefek pada tingkat penjualan booth kami. Sebelum menentukan konsep dari booth, kami mengamati untuk siapa booth ini disajikan. Kami menentukan target konsumen berdasarkan umur agar tren atau mode yang dipilih dapat sesuai dengan jangka umur dari sebagian besar konsumen.<br><br> 
+					Dalam hal tersebut, target konsumen dari booth kami sebagian besar merupakan siswi SMP Santa Ursula Jakarta. Maka dari itu, konsep yang akan kami ambil harus sesuai dengan tren atau mode konsep yang sedang disukai oleh jangka umur remaja. Dengan itu, kami memilih konsep desain yang cerah dan memikat pandangan calon konsumen bazaar. Kami memilih tema yang cenderung menonjol dengan warna-warna yang dominan, yaitu warna-warna cerah seperti merah, kuning, dan, hitam. Warna-warna ini kami ambil dari logo Race to Rave sendiri yang merupakan maskot hewan macan tutul yang sedang mengendarai mobil balap. Gambaran ini memiliki warna dominan merah sehingga dapat lebih menarik perhatian calon-calon konsumen serta audiens dari sosial media maupun booth Race to Rave.</p>
+				    <img src="race2rave-small.jpg" style="width: 30%;" alt="Race to Rave Logo">
+					<p style="text-align: center;">Logo Race to Rave</p>
+					<p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Setelah menentukan konsep serta tema besar dari dekorasi yang akan digunakan untuk booth, kami mengatur linimasa dari perencanaan dekorasi yang akan ditempel dan digunakan untuk booth nantinya. Hal ini dilakukan agar pembelian serta pemasangan dekorasi dapat dilakukan dalam kurun waktu yang tepat dan tidak mepet dengan hari acara bazaar. Kami melakukan pertemuan yang membahas mengenai dekorasi yang akan digunakan untuk booth Race to Rave. Setelah menemukan kesimpulan, kami mengutus salah satu dari anggota untuk menggunakan uang kas yang dikumpulkan untuk membeli barang-barang dekorasi booth.<br><br>
+					Kami mulai membeli barang-barang dekorasi secara berkala melalui platform daring, yaitu aplikasi belanja Shopee. Pembelian menggunakan uang kas modal bazaar tersebut kami lakukan mulai dari bulan Oktober awal sampai Oktober akhir. Anggaran yang dikeluarkan untuk dekorasi booth kami tentukan di bawah angka nominal Rp 150.000,-. Hal ini ditentukan agar dekorasi booth dapat dilakukan dengan maksimal tetapi dengan modal yang sekecil mungkin. Ini dikarenakan kami tidak hanya memiliki tujuan untuk menarik perhatian calon konsumen, tetapi juga agar pendapatan yang diterima maksimal tanpa adanya anggaran tambahan yang tidak penting bagi hasil akhir penjualan. Ketika semua barang yang diperlukan sudah sampai, kami mengumpulkan barang-barang tersebut untuk dipersiapkan sebelum tanggal 5 Desember 2023, yaitu hari pelaksanaan bazaar. <br><br>
+					Kami pompa balon-balon serta merancang lokasi penempatan masing-masing dekorasi yang telah dibeli agar pada hari H, kami tidak bingung atau bahkan dilema dengan masalah dekorasi booth bazaar. Properti-properti yang digunakan untuk booth kami rancang sedemikian rupa agar menarik perhatian calon konsumen tetapi juga tetap sesuai dan sejalan dengan tema konsep desain. Sehari sebelum acara bazaar dimulai, yaitu tanggal 4 Desember 2023, kami diberikan waktu, yaitu saat pulang sekolah, untuk mendekorasi booth mempersiapkan hari esoknya. Kami mulai menempatkan barang-barang yang dibutuhkan untuk dekorasi booth. <br><br>
+					Proses dekorasi booth yang pertama kalinya kami mulai secara fisik dan nyata pada hari tersebut. Pertama, kami mulai dengan mengeluarkan taplak meja yang nantinya akan digunakan sebagai penutup meja sekaligus penarik perhatian konsumen. Hal ini dikarenakan taplak meja yang kami pilih memiliki motif merah-putih sehingga mudah dilihat oleh konsumen di lingkungan sekitar. Selain itu, kami juga menempatkan motif abu-abu polos untuk meja kedua di samping meja utama bazaar dikarenakan meja tersebut akan kami khususkan untuk penjualan makanan dan minuman. Maka dari itu, kami menyimpulkan bahwa dasar motif yang diperlukan untuk taplak meja penjualan makanan dan minuman harus polos agar makanan dan minuman di atasnya terlihat menarik dan lebih menonjol. Kami juga tidak lupa untuk menyiapkan taplak meja cadangan jika terdapat peristiwa makanan atau minuman yang tumpah agar dapat segera diganti baru. Untuk dekorasi pada kedua meja, kami menambahkan rumbai kilau pada bagian depan meja agar lebih terlihat oleh konsumen saat sedang melihat area lokasi bazaar kelas IX-3. <br><br>
+					Pada saat yang bersamaan, kami juga menempatkan papan tulis di belakang lokasi booth kami agar dapat menjadi dasar dari penempatan judul booth kami. Papan tulis tersebut kami tutup dengan rumbai-rumbai dekorasi kilau berwarna silver. Kami juga menempelkan tiga desain berbeda dari totebag kami di bagian belakang papan tulis agar terlihat oleh calon konsumen saat hendak memasuki area lokasi pelaksanaan bazaar pada hari H nantinya. Balon-balon yang sudah dipompa sebelumnya kami tempel di area tepi papan tulis serta meja. Kami juga menempatkan totebag di tempat gantungan baju yang juga menjadi salah satu properti besar dalam booth kami secara keseluruhan. Kami sempat menarik meja dari kelas ruang dalam dengan izin guru untuk digunakan sebagai alas penempatan gelas-gelas yang menjadi bahan tembakan permainan ‘Nerf Gun’ kami. Kami juga menempatkan meja tambahan dari kelas ruang dalam untuk dijadikan tempat alas kompor portabel untuk penggorengan salah satu makanan kami, yaitu Melted Cheesecubes yang dilakukan di tempat. <br><br>
+					Sebagai tambahan dekorasi serta kenyamanan saat pelaksanaan, kami juga menambahkan rak dorong sebagai tempat penampungan stok-stok barang penjualan yang tidak di display atau ditampilkan di meja utama. Dengan properti-properti besar seperti meja permainan, meja penggorengan, meja utama untuk barang penjualan, meja makanan/minuman, dan gantungan baju berisi totebag, kami berhasil memeriahkan booth dengan warna-warna dominan merah, kuning, dan silver. Saat pelaksanaan penempatan dekorasi ke booth kami secara fisik, kami menghadapi masalah berupa kelalaian kami dalam pembelian balon ataupun baliho untuk tulisan judul booth kami, yaitu Race to Rave. Dengan itu, kami menggunakan sarana transportasi salah satu anggota kelompok kami untuk membeli balon-balon bertulisan “R2R” sebagai singkatan dari judul booth kami. <br><br>
+					Pada pagi hari sebelum acara bazaar dimulai, yaitu sekitar jam 06.30an, kami menempelkan ketiga balon tersebut di tengah-tengah papan yang menjadi salah satu properti untuk dekorasi booth kami. Sekitar jam 07.30, kami siap membuka booth kami yang sudah terdekor dengan maksimal untuk dijadikan sarana penjualan kepada calon-calon konsumen Race to Rave. Perencanaan booth yang sudah kami rencanakan dari sebulan, bahkan hampir dua bulan sebelum hari acara bazaar sudah terlaksanakan. Meskipun terdapat beberapa masalah yang dihadapi, kami mampu mengatasi dan mencari solusi untuk masalah tersebut agar kelalaian kami tidak menghambat laju acara bazaar Integrated Learning nantinya.</p>
+
+				</div>
             </div>
         </div>
         <div class="right-column">
             <div class="card">
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
-                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <p>Enjoy our playlist while browsing through our content!</p>
+                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div >
+                <p style="text-align: center;">Ngejam sama Race to Rave yuk!</p>
             </div>
             <div class="card">
                 <h3>Gallery :</h3>
-                <div>
-                    <!-- Add your gallery content here -->
-                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
-                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
-                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
-                </div>
+     <div class="gallery-container">
+        <!-- Add your gallery images here -->
+        <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 30%;">
+        <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 30%;">
+        <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 30%;">
+        <img src="gallery_image4.jpg" alt="Gallery Image 4" style="width: 30%;">
+        <img src="gallery_image5.jpg" alt="Gallery Image 5" style="width: 30%;">     
+    </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+        <marquee behaviour="scroll" scrollamount="15">Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
     </div>
 </body>
 </html>

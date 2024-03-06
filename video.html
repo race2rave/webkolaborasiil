@@ -3,7 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <title>Home | Web Kolaborasi IL Kelompok 6</title>
+    <title>Video | Web Kolaborasi IL Kelompok 6</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             background-color: #B52E1F;
@@ -73,15 +74,31 @@
         .card img {
             width: 100%;
         }
-        .card h3, .card p {
+        .card h3 {
+        text-align: center;
             margin: 20px;
         }
         .card p {
             text-align: left;
             text-align: justify;
             font-family: "Lexend", sans-serif;
-            font-size: 14px;
+            font-size: 17px;
             margin: 20px; 
+        }
+        .card .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card .gallery-container img {
+            margin: 5px; /* Adjust the margin as needed */
+        }
+        .left-column .card {
+            padding: 5px; /* Add padding only to the cards inside the container */
+        }
+        .right-column .card {
+            padding: 2px; /* Add padding only to the cards inside the container */
         }
         .footer {
             width: 100%;
@@ -94,69 +111,73 @@
         }
 
         /* Center the iframe */
-        .spotify-container {
+        .youtube-container {
             display: flex;
             justify-content: center;
         }
 
-        .spotify-container iframe {
-            width: 90%; /* Adjust the width as needed */
-            border-radius: 12px;
+        .youtube-container iframe {
+            max-width: 100%; /* Make the iframe resizable */
+            height: 50; /* Ensure aspect ratio is maintained */
         }
 
-@media only screen and (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: stretch;
-    }
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: stretch;
+            }
 
-    .nav ul {
-        justify-content: flex-start;
-        width: 100%;
-    }
+            .nav ul {
+                justify-content: flex-start;
+                width: 100%;
+            }
 
-    .nav li {
-        margin: 5px 0;
-    }
+            .nav li {
+                margin: 5px 0;
+            }
 
-    .nav a {
-        padding: 10px;
-        font-size: 14px;
-        text-align: center;
-    }
+            .nav a {
+                padding: 10px;
+                font-size: 14px;
+                text-align: center;
+            }
+            .left-column, .right-column {
+                flex: 1;
+                margin: 10;
+                width: 100%; /* Set the width to 100% for mobile devices */
+            }
 
-    .card {
-        flex: 1;
-        margin: 0;
-    }
+            .header {
+                height: 150px; /* Adjust height for mobile view */
+            }
+        }
 
-    .header {
-        height: 150px; /* Adjust height for mobile view */
-    }
-}
+        @media only screen and (min-width: 769px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
 
-@media only screen and (min-width: 769px) {
-    .container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+            .left-column {
+                flex: 7;
+                margin-right: 20px;
+            }
 
-    .left-column {
-        flex: 7;
-        margin-right: 20px;
-    }
-
-    .right-column {
-        flex: 3;
-    }
-}
+            .right-column {
+                flex: 3;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header"></div>
     <div class="nav">
         <ul>
-            <li><a href="home.html#">HOME</a></li>
+            <li><a href="main.html#">HOME</a></li>
             <li><a href="abstract.html#">ABSTRACT</a></li>
             <li><a href="bab1.html#">PENDAHULUAN</a></li>
             <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
@@ -169,31 +190,35 @@
     <div class="container">
         <div class="left-column">
             <div class="card">
-<iframe width="800" height="480" src="https://www.youtube.com/embed/a1HCNaxQta8" title="Menelusuri Bioteknologi Melalui Nikmatnya Keju Mozzarella" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+                <h1 style="text-align: center;">VIDEO</h1>
+                <div class="youtube-container">
+                    <iframe width="800" height="480" src="https://www.youtube.com/embed/a1HCNaxQta8" title="Menelusuri Bioteknologi Melalui Nikmatnya Keju Mozzarella" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <div class="right-column">
             <div class="card">
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
-                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <p>Enjoy our playlist while browsing through our content!</p>
+                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div >
+                <p style="text-align: center;">Ngejam sama Race to Rave yuk!</p>
             </div>
             <div class="card">
                 <h3>Gallery :</h3>
-                <div>
-                    <!-- Add your gallery content here -->
-                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
-                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
-                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
+                <div class="gallery-container">
+                    <!-- Add your gallery images here -->
+                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 30%;">
+                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 30%;">
+                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 30%;">
+                    <img src="gallery_image4.jpg" alt="Gallery Image 4" style="width: 30%;">
+                    <img src="gallery_image5.jpg" alt="Gallery Image 5" style="width: 30%;">     
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+        <marquee behaviour="scroll" scrollamount="15">Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
     </div>
 </body>
 </html>

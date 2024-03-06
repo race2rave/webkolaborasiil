@@ -3,7 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <title>Home | Web Kolaborasi IL Kelompok 6</title>
+    <title>Abstract | Web Kolaborasi IL Kelompok 6</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             background-color: #B52E1F;
@@ -73,16 +74,32 @@
         .card img {
             width: 100%;
         }
-        .card h3, .card p {
+        .card h3 {
+		text-align: center;
             margin: 20px;
         }
         .card p {
             text-align: left;
             text-align: justify;
             font-family: "Lexend", sans-serif;
-            font-size: 18px;
+            font-size: 17px;
             margin: 20px; 
         }
+		.card .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card .gallery-container img {
+    margin: 5px; /* Adjust the margin as needed */
+}
+.left-column .card {
+    padding: 5px; /* Add padding only to the cards inside the container */
+}
+.right-column .card {
+    padding: 2px; /* Add padding only to the cards inside the container */
+}
         .footer {
             width: 100%;
             height: 50px;
@@ -105,6 +122,10 @@
         }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
     .nav {
         flex-direction: column;
         align-items: stretch;
@@ -124,10 +145,10 @@
         font-size: 14px;
         text-align: center;
     }
-
-    .card {
+    .left-column, .right-column {
         flex: 1;
-        margin: 0;
+        margin: 10;
+        width: 100%; /* Set the width to 100% for mobile devices */
     }
 
     .header {
@@ -136,7 +157,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .container {
+ .container {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -156,7 +177,7 @@
     <div class="header"></div>
     <div class="nav">
         <ul>
-            <li><a href="home.html#">HOME</a></li>
+            <li><a href="main.html#">HOME</a></li>
             <li><a href="abstract.html#">ABSTRACT</a></li>
             <li><a href="bab1.html#">PENDAHULUAN</a></li>
             <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
@@ -170,9 +191,10 @@
         <div class="left-column">
             <div class="card">
                 <h1 style="text-align: center;">ABSTRACT</h1>
-                <div style="text-align: center;">
+				<div style="text-align: center;">
                     <p>The bazaar established on the 5th of December, was based on the concept of racing. Race To Rave is a small business retailed for the project of Saint Ursula Junior High School, which sells various things including food, products, and drinks. Mozzarella cheese is one of the most loved cheeses in this generation. This type of cheese is used in one of our foods, cheese cubes. Considering the range price always above Rp 30.000,-, we decided to make mozzarella cheese as our main project in Science, focusing on Biology. Unlike supermarket-bought mozzarella, freshly made ones are usually cheaper in material, yet complicated in the process. Leveraging the field of socials, the whole team has made a report for our financial stability after the bazaar. Besides that, the social and math field also required the report and statistics of our products. The research methods we used in this biotechnology process are laboratory experiments; which include observations and measurements of the ingredients, statistical analysis; including the statistics we made for our final report, market research, and trend analysis; which involves the consideration of trends in mozzarella cheese to attract customers.</p>
-            <p>Bazaar yang didirikan pada tanggal 5 Desember ini mengusung konsep racing. Race To Rave adalah usaha kecil yang dibuat untuk proyek Sekolah SMP Santa Ursula Jakarta, yang menjual berbagai macam barang termasuk makanan, produk dan minuman. Keju mozarella merupakan salah satu keju yang paling digandrungi pada generasi ini. Keju jenis ini digunakan pada salah satu makanan kita, yaitu cheese cubes. Mengingat kisaran harga yang selalu diatas Rp 30.000,-, kami memutuskan untuk menjadikan keju mozzarella sebagai proyek utama kami di bidang Sains dengan fokus pada sektor Biologi. Berbeda dengan mozarella yang dibeli di supermarket, mozzarella segar biasanya lebih murah bahannya, namun prosesnya rumit. Memanfaatkan bidang sosial, seluruh tim sudah membuat laporan untuk stabilitas keuangan kami setelah bazar. Selain itu, bidang sosial dan matematika juga membutuhkan laporan dan statistik produk kami. Metode penelitian yang kami gunakan pada proses bioteknologi ini adalah eksperimen laboratorium; yang meliputi observasi dan pengukuran bahan, analisis statistik; termasuk statistik yang kami buat untuk laporan akhir, riset pasar, dan analisis tren; melibatkan pertimbangan tren keju mozzarella untuk menarik pelanggan.</p></div>
+                    <p>"Bazaar yang didirikan pada tanggal 5 Desember ini mengusung konsep racing. Race To Rave adalah usaha kecil yang dibuat untuk proyek Sekolah SMP Santa Ursula Jakarta, yang menjual berbagai macam barang termasuk makanan, produk dan minuman. Keju mozarella merupakan salah satu keju yang paling digandrungi pada generasi ini. Keju jenis ini digunakan pada salah satu makanan kita, yaitu cheese cubes. Mengingat kisaran harga yang selalu diatas Rp 30.000,-, kami memutuskan untuk menjadikan keju mozzarella sebagai proyek utama kami di bidang Sains dengan fokus pada sektor Biologi. Berbeda dengan mozarella yang dibeli di supermarket, mozzarella segar biasanya lebih murah bahannya, namun prosesnya rumit. Memanfaatkan bidang sosial, seluruh tim sudah membuat laporan untuk stabilitas keuangan kami setelah bazar. Selain itu, bidang sosial dan matematika juga membutuhkan laporan dan statistik produk kami. Metode penelitian yang kami gunakan pada proses bioteknologi ini adalah eksperimen laboratorium; yang meliputi observasi dan pengukuran bahan, analisis statistik; termasuk statistik yang kami buat untuk laporan akhir, riset pasar, dan analisis tren; melibatkan pertimbangan tren keju mozzarella untuk menarik pelanggan."</p>
+				</div>
             </div>
         </div>
         <div class="right-column">
@@ -180,22 +202,24 @@
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
                     <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <p>Enjoy our playlist while browsing through our content!</p>
+                </div >
+                <p style="text-align: center;">Ngejam sama Race to Rave yuk!</p>
             </div>
             <div class="card">
                 <h3>Gallery :</h3>
-                <div>
-                    <!-- Add your gallery content here -->
-                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
-                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
-                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
-                </div>
+     <div class="gallery-container">
+        <!-- Add your gallery images here -->
+        <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 30%;">
+        <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 30%;">
+        <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 30%;">
+        <img src="gallery_image4.jpg" alt="Gallery Image 4" style="width: 30%;">
+        <img src="gallery_image5.jpg" alt="Gallery Image 5" style="width: 30%;">     
+    </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+        <marquee behaviour="scroll" scrollamount="15">Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
     </div>
 </body>
 </html>

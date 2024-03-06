@@ -3,7 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <title>Home | Web Kolaborasi IL Kelompok 6</title>
+    <title>PowerPoint | Web Kolaborasi IL Kelompok 6</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             background-color: #B52E1F;
@@ -73,16 +74,32 @@
         .card img {
             width: 100%;
         }
-        .card h3, .card p {
+        .card h3 {
+		text-align: center;
             margin: 20px;
         }
         .card p {
             text-align: left;
             text-align: justify;
             font-family: "Lexend", sans-serif;
-            font-size: 14px;
+            font-size: 17px;
             margin: 20px; 
         }
+		.card .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card .gallery-container img {
+    margin: 5px; /* Adjust the margin as needed */
+}
+.left-column .card {
+    padding: 5px; /* Add padding only to the cards inside the container */
+}
+.right-column .card {
+    padding: 2px; /* Add padding only to the cards inside the container */
+}
         .footer {
             width: 100%;
             height: 50px;
@@ -105,6 +122,10 @@
         }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
     .nav {
         flex-direction: column;
         align-items: stretch;
@@ -124,10 +145,10 @@
         font-size: 14px;
         text-align: center;
     }
-
-    .card {
+    .left-column, .right-column {
         flex: 1;
-        margin: 0;
+        margin: 10;
+        width: 100%; /* Set the width to 100% for mobile devices */
     }
 
     .header {
@@ -136,7 +157,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .container {
+ .container {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -156,7 +177,7 @@
     <div class="header"></div>
     <div class="nav">
         <ul>
-            <li><a href="home.html#">HOME</a></li>
+            <li><a href="main.html#">HOME</a></li>
             <li><a href="abstract.html#">ABSTRACT</a></li>
             <li><a href="bab1.html#">PENDAHULUAN</a></li>
             <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
@@ -169,14 +190,14 @@
     <div class="container">
         <div class="left-column">
             <div class="card">
-                <h1 style="text-align: center;">Race to Rave Crew :</h1>
-                <div style="text-align: center;">
-                    <img src="perkenalan.jpg" style="width: 50%;" alt="Race to Rave Crew">
-                    <p><b>Riwayat Penulis (dari kiri ke kanan)</b></p>
-                    <p>&#10070; Arletha Rhea Tirta, biasa dipanggil Letha, merupakan anak pertama dari dua bersaudara. Letha lahir di Jakarta pada tanggal 8 April 2009. Letha pertama kali menempuh pendidikan di Kinderfield Preschool, Teruna Muda Elementary School, dan kini di SMP Santa Ursula Jakarta.</p>
-                    <p>&#10070; Cheryl Miracle Paris Zhang, atau biasanya dipanggil Cheryl merupakan anak pertama dari tiga bersaudara. Cheryl lahir pada tanggal 17 November 2009, dan menempuh pendidikan di Sekolah Bunda Mulia selama 9 tahun. Kini, Cheryl merupakan peserta didik kelas IX di Sekolah Santa Ursula Jakarta.</p>
-                    <p>&#10070; Benedicta Glorielle Athia Aritonang, biasanya dipanggil Athia merupakan anak pertama dan anak tunggal. Athia lahir pada tanggal 7 Desember 2008, dan menempuh pendidikan di KB-TK dan SD Santa Theresia selama 9 tahun. Kini Athia merupakan peserta didik SMP Kelas 9 di SMP Santa Ursula Jakarta.</p>
-                    <p>&#10070; Christabelle Natasha Arfan, atau biasanya dipanggil Christabelle merupakan anak kedua dari dua bersaudara. Christabelle lahir pada tanggal 2 Oktober 2009, dan menempuh pendidikan Nursery Kinderland selama 1 tahun, KB-TK Katolik Diakonia selama 3 tahun, SDK IPEKA Pluit selama 6 tahun. Kini Christabelle merupakan peserta didik kelas IX di SMP Santa Ursula Jakarta.</p>
+                <h1 style="text-align: center;">Presentasi Race to Rave</h1>
+				<div style="text-align: center;">
+					<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAF-dMcERZY/f-4yNy1q6dRnOTfNmghYIw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                      </iframe>
+                    </div>
+                    <a href="https://www.canva.com/design/DAF-dMcERZY/f-4yNy1q6dRnOTfNmghYIw/view?utm_content=DAF-dMcERZY&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Integrated Learning_93_Kelompok 6_Race to Rave</a>
                 </div>
             </div>
         </div>
@@ -185,22 +206,24 @@
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
                     <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <p>Enjoy our playlist while browsing through our content!</p>
+                </div >
+                <p style="text-align: center;">Ngejam sama Race to Rave yuk!</p>
             </div>
             <div class="card">
                 <h3>Gallery :</h3>
-                <div>
-                    <!-- Add your gallery content here -->
-                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
-                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
-                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
-                </div>
+     <div class="gallery-container">
+        <!-- Add your gallery images here -->
+        <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 30%;">
+        <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 30%;">
+        <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 30%;">
+        <img src="gallery_image4.jpg" alt="Gallery Image 4" style="width: 30%;">
+        <img src="gallery_image5.jpg" alt="Gallery Image 5" style="width: 30%;">     
+    </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+        <marquee behaviour="scroll" scrollamount="15">Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
     </div>
 </body>
 </html>

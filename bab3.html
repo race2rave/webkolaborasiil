@@ -3,7 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <title>Home | Web Kolaborasi IL Kelompok 6</title>
+    <title>Bab 3 | Web Kolaborasi IL Kelompok 6</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         body {
             background-color: #B52E1F;
@@ -73,16 +74,32 @@
         .card img {
             width: 100%;
         }
-        .card h3, .card p {
+        .card h3 {
+		text-align: center;
             margin: 20px;
         }
         .card p {
             text-align: left;
             text-align: justify;
             font-family: "Lexend", sans-serif;
-            font-size: 14px;
+            font-size: 17px;
             margin: 20px; 
         }
+		.card .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card .gallery-container img {
+    margin: 5px; /* Adjust the margin as needed */
+}
+.left-column .card {
+    padding: 5px; /* Add padding only to the cards inside the container */
+}
+.right-column .card {
+    padding: 2px; /* Add padding only to the cards inside the container */
+}
         .footer {
             width: 100%;
             height: 50px;
@@ -105,6 +122,10 @@
         }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
     .nav {
         flex-direction: column;
         align-items: stretch;
@@ -124,10 +145,10 @@
         font-size: 14px;
         text-align: center;
     }
-
-    .card {
+    .left-column, .right-column {
         flex: 1;
-        margin: 0;
+        margin: 10;
+        width: 100%; /* Set the width to 100% for mobile devices */
     }
 
     .header {
@@ -136,7 +157,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .container {
+ .container {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -156,7 +177,7 @@
     <div class="header"></div>
     <div class="nav">
         <ul>
-            <li><a href="home.html#">HOME</a></li>
+            <li><a href="main.html#">HOME</a></li>
             <li><a href="abstract.html#">ABSTRACT</a></li>
             <li><a href="bab1.html#">PENDAHULUAN</a></li>
             <li><a href="bab2.html#">RENCANA KEGIATAN</a></li>
@@ -169,14 +190,41 @@
     <div class="container">
         <div class="left-column">
             <div class="card">
-                <h1 style="text-align: center;">Race to Rave Crew :</h1>
-                <div style="text-align: center;">
-                    <img src="perkenalan.jpg" style="width: 50%;" alt="Race to Rave Crew">
-                    <p><b>Riwayat Penulis (dari kiri ke kanan)</b></p>
-                    <p>&#10070; Arletha Rhea Tirta, biasa dipanggil Letha, merupakan anak pertama dari dua bersaudara. Letha lahir di Jakarta pada tanggal 8 April 2009. Letha pertama kali menempuh pendidikan di Kinderfield Preschool, Teruna Muda Elementary School, dan kini di SMP Santa Ursula Jakarta.</p>
-                    <p>&#10070; Cheryl Miracle Paris Zhang, atau biasanya dipanggil Cheryl merupakan anak pertama dari tiga bersaudara. Cheryl lahir pada tanggal 17 November 2009, dan menempuh pendidikan di Sekolah Bunda Mulia selama 9 tahun. Kini, Cheryl merupakan peserta didik kelas IX di Sekolah Santa Ursula Jakarta.</p>
-                    <p>&#10070; Benedicta Glorielle Athia Aritonang, biasanya dipanggil Athia merupakan anak pertama dan anak tunggal. Athia lahir pada tanggal 7 Desember 2008, dan menempuh pendidikan di KB-TK dan SD Santa Theresia selama 9 tahun. Kini Athia merupakan peserta didik SMP Kelas 9 di SMP Santa Ursula Jakarta.</p>
-                    <p>&#10070; Christabelle Natasha Arfan, atau biasanya dipanggil Christabelle merupakan anak kedua dari dua bersaudara. Christabelle lahir pada tanggal 2 Oktober 2009, dan menempuh pendidikan Nursery Kinderland selama 1 tahun, KB-TK Katolik Diakonia selama 3 tahun, SDK IPEKA Pluit selama 6 tahun. Kini Christabelle merupakan peserta didik kelas IX di SMP Santa Ursula Jakarta.</p>
+                <h1 style="text-align: center;">HASIL KEGIATAN</h1>
+				<div style="text-align: center;">
+					<h2 style="font-weight:bold; text-align: left;"">3.1 Laporan Pelaksanaan</h2>
+					<p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Pada hari-H dari acara bazar Integrated Learning kelas IX-3, kami sudah siap dengan semua produk-produk yang ingin dijual, dekorasi booth, serta perlengkapan lainnya pada sekitar pukul 07.30 WIB. Kami mendapatkan pelanggan pertama sebelum waktu istirahat sehingga kami dapat ‘latihan’ sebelum adanya pasukan pelanggan dalam massa yang besar, yaitu saat istirahat 1 nantinya. Istirahat pertama telah tiba, kami mendapatkan massa pelanggan yang besar sehingga kami sedikit kewalahan, namun seiring berjalannya waktu kami menjadi terbiasa untuk melakukan segala hal dengan gesit supaya pelanggan dapat kami layani dengan sebaik mungkin.</p>
+					<h2 style="font-weight:bold; text-align: left;"">3.2 Laporan Keuangan</h2>
+					<p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Dalam data-data di bawah ini, ditunjukkan data laporan keuangan berupa modal yang dikeluarkan, penghasilan yang didapatkan, serta gaji dan keuntungan setiap anggota kelompok. Laporan keuangan bazar kami dibuat dalam Google Sheets agar pengerjaan lebih mudah dengan adanya formula-formula yang dapat menghitung suatu sel secara otomatis, sama halnya seperti aplikasi kalkulator. Laporan keuangan kami dilengkapi dengan lima data, yaitu daftar belanja, daftar barang dagangan, laporan laba/rugi, laporan pembagian keuntungan, dan laporan uang yang diterima.</p>
+					<p style="text-align: center; margin-left: 40px; margin-right: 40px;">Laporan Daftar Belanja</p>
+				    <img src="belanja1.jpg" style="width: 60%;" alt="Race to Rave Logo">
+				    <img src="belanja2.jpg" style="width: 60%;" alt="Race to Rave Logo">
+				    <img src="belanja3.jpg" style="width: 60%;" alt="Race to Rave Logo">
+					<p style="text-align: center; margin-left: 40px; margin-right: 40px;">Laporan Daftar Barang Dagangan</p>
+				    <img src="dagang1.jpg" style="width: 60%;" alt="Race to Rave Logo">
+				    <img src="dagang2.jpg" style="width: 60%;" alt="Race to Rave Logo">						
+					<p style="text-align: center; margin-left: 40px; margin-right: 40px;">Laporan Laba/Rugi</p>
+				    <img src="laba.jpg" style="width: 60%;" alt="Race to Rave Logo">						
+					<p style="text-align: center; margin-left: 40px; margin-right: 40px;">Laporan Pembagian Keuntungan</p>
+				    <img src="untung.jpg" style="width: 60%;" alt="Race to Rave Logo">						
+					<p style="text-align: center; margin-left: 40px; margin-right: 40px;">Laporan Uang yang Diterima</p>
+				    <img src="keuangan.jpg" style="width: 60%;" alt="Race to Rave Logo">
+					<h2 style="font-weight:bold; text-align: left;"">3.3 Statistik Jualan</h2>
+				    <img src="statistik1.jpg" style="width: 60%;" alt="Race to Rave Logo">
+				    <img src="statistik2.jpg" style="width: 60%;" alt="Race to Rave Logo">	
+					<h2 style="font-weight:bold; text-align: left;"">3.4 Refleksi Kegiatan (Agama dan PPKn)</h2>
+					<h4 style="font-weight:bold; text-align: left; margin-left: 40px; margin-right: 40px;"">AGAMA:</h4>
+					<p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Manusia mempunyai tanggung jawab moral terhadap alam yang diciptakan Tuhan serta menganggap mereka seperti saudara kita sendiri. Oleh karena itu, manusia dapat mempertanggungjawabkan  melalui perkembangan ilmu pengetahuan dan bioteknologi tanpa merusak alam. Bioteknologi yang digunakan dalam proses pangan dapat membantu menyediakan berbagai macam produk baru yang digunakan untuk memenuhi kebutuhan hidup manusia. Misalnya keju, bahan baku keju merupakan hasil dari hewan ternak yaitu sapi yang hidup di peternakan dengan diberi makanan berkecukupan termasuk rumput yang diperoleh dari alam. Setiap sapi mendapat perawatan kesehatan dan nutrisi dari dokter hewan dan ahli gizi, agar menghasilkan susu yang berkualitas tinggi. Sapi adalah hewan ternak ciptaan Tuhan yang menghasilkan daging, susu dan kulitnya bisa digunakan untuk berbagai produk bahan kerajinan, pakaian juga makanan. <br><br>
+					Dengan kemajuan teknologi susu sapi bisa diolah menjadi aneka variasi makanan yaitu seperti keju. Proses pembuatan keju melibatkan bakteri dari alam. Menurut ajaran gereja penggunaan bioteknologi harus memperhatikan prinsip-prinsip moral seperti menghormati kehidupan dan lingkungan. Bioteknologi yang digunakan secara benar dapat membantu menjaga keutuhan alam ciptaan Tuhan sesuai dengan ajaran gereja.</p>
+					<h4 style="font-weight:bold; text-align: left; margin-left: 40px; margin-right: 40px;"">PPKN:</h4>
+					<p style="text-align: justify; margin-left: 40px; margin-right: 40px;">Pada saat momen pembagian kelompok dimulai, saya terus berharap untuk mendapatkan kelompok yang bisa berdinamika baik dalam pekerjaan kelompok. Setelah beberapa kali melakukan pertemuan Integrated Learning, saya merasa sudah memiliki chemistry yang begitu baik diantara kita. Dalam setiap sesi diskusi, kami dapat dengan bebas mengekspresikan opini kami masing-masing akan proses bazaar. Setiap opini yang terdapat dalam diskusi dapat tertampung dengan baik. Namun pastinya sebagai kelompok yang memiliki tujuan yang sama, kami juga sering terjebak dalam perdebatan-perdebatan kecil karena perbedaan pola pikir akan suatu masalah. Walaupun terkadang harus menghadapi masalah, hal ini tidak pernah menghalangi kami untuk terus berdinamika dengan baik sebagai sebuah kelompok. Selama proses Integrated Learning khususnya dalam pelajaran PPKn, saya bisa meningkatkan banyak sekali skill-skill yang mungkin selama ini belum bisa saya lakukan dengan baik. Salah satunya adalah belajar menerima pendapat anggota lain dan melakukan kolaborasi dengan baik. Menurut saya skill ini begitu penting untuk diasah terutama untuk kegiatan bekerja kita nanti di masa depan. Saya sangat bersyukur bisa berkelompok dengan teman-temen sekelompok saya karena walaupun dengan segala masalah yang kita alami, kita selalu bisa bangkit lagi dan terus berlari untuk mencapai tujuan kita bersama sebagai satu kelompok. Setelah lama berkolaborasi dengan kelompok saya, saya sadar bahwa nilai persatuan dalam kegiatan Integrated Learning ini begitu bermakna bagi kita semua. Dalam pelajaran PPKn, kita selalu diingatkan untuk selalu bekerja sama dengan siapapun dengan baik. Saya merasa tingkat persatuan dalam kelompok saya sudah sangat baik. Saya berharap dari kegiatan Integrated Learning ini, saya bisa menerapkan semua nilai-nilai yang sudah saya pelajari dalam pengalaman Integrated Learning ini di masa depan sebagai generasi penerus bangsa. Masa depan bangsa akan lebih cerah dengan adanya kami yang sudah bisa berkolaborasi dengan sangat baik dan mengetahui pentingnya saling menghormati pendapat satu sama lain. Semua proses yang sudah kami lewati sebagai kelompok begitu berarti dan akan terus saya kenang selamanya.<br><br>
+					Sejak awal bazaar, saya sangat senang bisa mendapat kelompok yang mampu bekerjasama dengan baik. Sebagai kelompok, tentu saja kami juga memiliki halangan tersendiri. Kami sempat bingung akan apa yang harus dijual pada saat bazaar nanti, tentu saja dengan segala usaha yang ada, kami mampu mengambil keputusan bersama. Saya belajar banyak dari teman-teman sekelompok saya. Kerjasama sangat dapat saya rasakan secara pribadi, saya juga mampu mengasah kemampuan yang saya miliki secara lebih dalam, seperti skill memasak saya. Nilai non-akademik yang ingin disampaikan oleh sekolah dapat ditangkap dengan baik, seluruh proses dan rangkaian sebelum bazaar membuat siswa secara pribadi terlatih untuk memasuki langkah selanjutnya. Apabila dikaitkan dengan nilai dasar PPKN, berkewirausahaan adalah salah satu hal dasar yang dimiliki setiap orang. Generasi penerus seperti kitalah yang harus meneruskan harapan serta tuntutan negara. Kemajuan dari negara berpusat harap pada kita, dan sudah seharusnya dengan tekun belajar kami mengambil banyak pengalaman. Menurut saya, kelompok saya adalah kelompok yang jauh diatas kata baik. Kami terus bertekad untuk berkomitmen dan bekerjasama dengan baik dengan satu sama lain. Halangan dan hambatan bukanlah apa-apa. Melewati seluruh kesulitan dan rintangan yang ada bisa mengangkat penjualan dan angka pertemanan kita.  Berkat kolaborasi yang tercampur dengan baik, hasil akhir yang kami peroleh pun baik. Pengalaman yang saya dapatkan tidak akan mampu terbayarkan oleh apapun itu, memberi kesempatan pada setiap potensial yang kami miliki merupakan hal yang sangat berharga. Saya harap, bahkan setelah semuanya selesai pun, kami tetap bisa berteman dengan baik.<br><br>
+					Pada 5 Desember 2023, kami kelompok 6 Integrated Learning Race to Rave, melaksanakan bazaar yang diselenggarakan oleh SMP Santa Ursula Jakarta. Setelah bazaar selesai dilakukan, saya secara pribadi belajar bahwa sebagai siswi yang menduduki jenjang SMP, saya tidak hanya melakukan pembelajaran akademik secara terus-menerus, melainkan juga perlu mengembangkan kemampuan kita yang dapat diaplikasikan pada dunia masa depan nantinya, seperti kemampuan atau skill untuk berjualan, dan bertahan hidup saat memasuki dunia kerja nanti. Oleh karena itu, saya belajar dari acara bazaar ini bahwa kemampuan berjualan juga merupakan hal yang penting untuk dipelajari. Pengalaman berjualan dapat menjadi dasar dari kehidupan pada masa depan nantinya. Dalam dasar atau landasan PPKn, saya mempelajari bahwa berjualan ini dapat menjadi suatu kemampuan yang dapat diasah setiap individu sehingga dapat berbuah baik bagi bangsa dan negara kita tercinta, Indonesia. Kami sebagai generasi muda calon penerus bangsa Indonesia dapat memajukan bangsa dengan memulai dari diri kita sendiri, yaitu dengan mengasah dan mengembangkan potensial kita sehingga pada masa depan nantinya dapat membantu negara, baik dalam lingkungan pekerjaan maupun lingkungan masyarakat lainnya. Dengan belajar dengan giat dan menggapai pengalaman bermanfaat sebanyak-banyaknya, kami dapat menyimpan ilmu pengetahuan dan pengalaman tersebut untuk membantu sesama dalam peran kita, yaitu masyarakat yang berbangsa dan bernegara. Dengan itu, saya dapat menyimpulkan bahwa bazaar Integrated Learning merupakan acara yang bermanfaat dan dapat menjadi pembelajaran bagi saya dan teman-teman saya. Kami belajar bahwa kemampuan dapat menghasilkan buah yang baik bila diasah, yaitu dengan melalui masa bahagia bersama, dan masa sulit bersama sebagai anggota kelompok yang memiliki dasar nilai kerjasama.<br><br>
+					Saya sangat senang dengan adanya IL. Karena IL kali ini kami akan mengadakan bazaar. Kegiatan wirausaha secara kecil tetapi merupakan pembelajaran yang sangat berarti bagi para siswi dalam mengelola uang sebagai modal usaha.<br><br>
+					Waktu pembagian kelompok, saya berharap mendapat teman yang saya kenal dan akrab dengan saya. Tetapi ternyata saya tidak mendapatkan teman yang akrab dengan saya. Saya berusaha untuk mengenali mereka dengan baik dan berusaha berbuat baik.<br><br>
+					Saya mempunyai banyak ide barang-barang yang akan dijual di bazaar, saya ceritakan ke teman-teman satu kelompok. Tetapi ide-ide saya tidak diterima oleh teman teman. Kemudian kami berdiskusi  bersama untuk menentukan apa yang akan dijual. Walaupun sedikit terjadi ketidaksetujuan barang-barang  yang akan dijual tetapi kita bisa menyelesaikan dengan baik. <br><br>
+					Sesuai dengan pelajaran PPKn kami berdiskusi dan dapat menentukan barang-barang yang akan dijual di bazaar.<br><br>
+					Sehari sebelum bazaar, kami sibuk menyiapkan barang-barang yang akan kami jual. Bazaar kami menjual makanan yang harus dijual digoreng dulu yaitu melted cheeseballs. Makanan ini sangat diminati oleh pengunjung. Pengunjung tidak sabar menunggu makanan ini matang. Mereka mengerubungi saya yang sedang menggoreng, hal ini membuat saya sangat tertekan. Karena kami hanya menggunakan kompor kecil dan penggorengan yang kecil sehingga memerlukan waktu yang lama untuk mematangkannya. Di sini saya dapat menyadari jika saya sedang membeli makanan di kantin saya harus sabar menunggu. Karena biasanya saya tidak sabar menunggu antrian, hal ini juga membikin pedagang tertekan. Kegiatan bazaar ini merupakan pengalaman yang pertama kali saya sebagai pelajar dan merupakan pengalaman yang paling berkesan yang tidak dapat dibeli menggunakan uang.</p>					
                 </div>
             </div>
         </div>
@@ -185,22 +233,24 @@
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
                     <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <p>Enjoy our playlist while browsing through our content!</p>
+                </div >
+                <p style="text-align: center;">Ngejam sama Race to Rave yuk!</p>
             </div>
             <div class="card">
                 <h3>Gallery :</h3>
-                <div>
-                    <!-- Add your gallery content here -->
-                    <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 100%;">
-                    <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 100%;">
-                    <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 100%;">
-                </div>
+     <div class="gallery-container">
+        <!-- Add your gallery images here -->
+        <img src="gallery_image1.jpg" alt="Gallery Image 1" style="width: 30%;">
+        <img src="gallery_image2.jpg" alt="Gallery Image 2" style="width: 30%;">
+        <img src="gallery_image3.jpg" alt="Gallery Image 3" style="width: 30%;">
+        <img src="gallery_image4.jpg" alt="Gallery Image 4" style="width: 30%;">
+        <img src="gallery_image5.jpg" alt="Gallery Image 5" style="width: 30%;">     
+    </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <marquee>Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
+        <marquee behaviour="scroll" scrollamount="15">Kelompok 6 | Race 2 Rave | Letha | Athia | Cheryl | Christabelle</marquee>
     </div>
 </body>
 </html>

@@ -114,12 +114,16 @@
         .youtube-container {
             display: flex;
             justify-content: center;
+			flex-direction: column; /* Ensure the videos are stacked vertically */
+			align-items: center; /* Center the videos horizontally */
         }
 
         .youtube-container iframe {
             max-width: 100%; /* Make the iframe resizable */
-            height: 50; /* Ensure aspect ratio is maintained */
-        }
+            height: 480px; /* Ensure aspect ratio is maintained */
+            display: block; /* Ensure each iframe is displayed as a block element */
+			margin-bottom: 20px; /* Add some spacing between the videos */
+		}
 
         @media only screen and (max-width: 768px) {
             .container {
@@ -193,7 +197,8 @@
                 <h1 style="text-align: center;">VIDEO</h1>
                 <div class="youtube-container">
                     <iframe width="800" height="480" src="https://www.youtube.com/embed/a1HCNaxQta8" title="Menelusuri Bioteknologi Melalui Nikmatnya Keju Mozzarella" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+					<iframe width="800" height="480" src="https://www.youtube.com/embed/YO_ZaSvUkdg" title="A glimpse of our mentai making process!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
             </div>
         </div>
         <div class="right-column">

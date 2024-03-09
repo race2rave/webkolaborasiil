@@ -4,7 +4,7 @@
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Lampiran | Web Kolaborasi IL Kelompok 6</title>
+    <title>Video | Web Kolaborasi IL Kelompok 6</title>
 	<meta name="description" content="Race2Rave Tugas Integrated Learning" itemprop="description" />
     <style>
         body {
@@ -68,9 +68,6 @@
             background-color: #EC9856;
             font-family: "Lexend", sans-serif;
             margin-bottom: 20px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
         }
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -79,7 +76,7 @@
             width: 100%;
         }
         .card h3 {
-		text-align: center;
+        text-align: center;
             margin: 20px;
         }
         .card p {
@@ -89,21 +86,21 @@
             font-size: 17px;
             margin: 20px; 
         }
-		.card .gallery-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        .card .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.card .gallery-container img {
-    margin: 5px; /* Adjust the margin as needed */
-}
-.left-column .card {
-    padding: 5px; /* Add padding only to the cards inside the container */
-}
-.right-column .card {
-    padding: 2px; /* Add padding only to the cards inside the container */
-}
+        .card .gallery-container img {
+            margin: 5px; /* Adjust the margin as needed */
+        }
+        .left-column .card {
+            padding: 5px; /* Add padding only to the cards inside the container */
+        }
+        .right-column .card {
+            padding: 2px; /* Add padding only to the cards inside the container */
+        }
         .footer {
             width: 100%;
             height: 50px;
@@ -115,6 +112,20 @@
         }
 
         /* Center the iframe */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+			flex-direction: column; /* Ensure the videos are stacked vertically */
+			align-items: center; /* Center the videos horizontally */
+        }
+
+        .youtube-container iframe {
+            max-width: 100%; /* Make the iframe resizable */
+            height: 480px; /* Ensure aspect ratio is maintained */
+            display: block; /* Ensure each iframe is displayed as a block element */
+			margin-bottom: 20px; /* Add some spacing between the videos */
+		}
+
         .spotify-container {
             display: flex;
             justify-content: center;
@@ -124,57 +135,56 @@
             width: 90%; /* Adjust the width as needed */
             border-radius: 12px;
         }
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: stretch;
+            }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .nav {
-        flex-direction: column;
-        align-items: stretch;
-    }
+            .nav ul {
+                justify-content: flex-start;
+                width: 100%;
+            }
 
-    .nav ul {
-        justify-content: flex-start;
-        width: 100%;
-    }
+            .nav li {
+                margin: 5px 0;
+            }
 
-    .nav li {
-        margin: 5px 0;
-    }
+            .nav a {
+                padding: 10px;
+                font-size: 14px;
+                text-align: center;
+            }
+            .left-column, .right-column {
+                flex: 1;
+                margin: 10;
+                width: 100%; /* Set the width to 100% for mobile devices */
+            }
 
-    .nav a {
-        padding: 10px;
-        font-size: 14px;
-        text-align: center;
-    }
-    .left-column, .right-column {
-        flex: 1;
-        margin: 10;
-        width: 100%; /* Set the width to 100% for mobile devices */
-    }
+            .header {
+                height: 150px; /* Adjust height for mobile view */
+            }
+        }
 
-    .header {
-        height: 150px; /* Adjust height for mobile view */
-    }
-}
+        @media only screen and (min-width: 769px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
 
-@media only screen and (min-width: 769px) {
- .container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+            .left-column {
+                flex: 7;
+                margin-right: 20px;
+            }
 
-    .left-column {
-        flex: 7;
-        margin-right: 20px;
-    }
-
-    .right-column {
-        flex: 3;
-    }
-}
+            .right-column {
+                flex: 3;
+            }
+        }
     </style>
 </head>
 <body>
@@ -189,39 +199,36 @@
             <li><a href="bab4.html#">PENUTUP</a></li>
             <li><a href="ppt.html#">PRESENTASI</a></li>
             <li><a href="video.html#">VIDEO</a></li>
-		    <li><a href="lampiran.html#">LAMPIRAN</a></li>
+			<li><a href="lampiran.html#">LAMPIRAN</a></li>
         </ul>
     </div>
     <div class="container">
         <div class="left-column">
             <div class="card">
                 <h1 style="text-align: center;">LAMPIRAN</h1>
-				<div style="text-align: center;">
-					<p> content here </p>
-					<img src="lampiran1.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran2.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran3.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran4.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran5.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran6.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran7.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran8.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran9.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran10.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran11.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran12.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran13.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran14.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran15.jpg" style="width: 30%;" alt="image">
-					<img src="lampiran16.jpg" style="width: 30%;" alt="image">
-                </div>
+					<img src="lampiran1.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran2.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran3.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran4.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran5.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran6.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran7.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran8.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran9.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran10.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran11.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran12.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran13.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran14.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran15.jpg" style="width: 10%;" alt="image">
+					<img src="lampiran16.jpg" style="width: 10%;" alt="image">
             </div>
         </div>
         <div class="right-column">
             <div class="card">
                 <h3>Spotify Playlist!</h3>
                 <div class="spotify-container">
-                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe src="https://open.spotify.com/embed/playlist/2MNzIAM7EBNzohjCjbPGZA?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div><br>
             </div>
         </div>
